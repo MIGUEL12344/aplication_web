@@ -1,0 +1,22 @@
+.T{
+    color: crimson;
+    font-size: 9px;
+    background-color: aqua;
+}
+
+.T:hover{
+    background-color: black;
+}
+
+.imagen{
+    width: 20%;
+    margin-left: 38%;
+}
+
+.logo{
+    margin-left: 38%;
+}
+
+.button{
+    background-color: greenyellow;
+}

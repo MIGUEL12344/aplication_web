@@ -36,7 +36,6 @@
 
     <section>
         <h2>Formulario de registro</h2>
-        <!--averiguar la propiedad action que me permite cargar archvios multimedia en mi formulario-->
             <form action="" method="post">
                 <label>nombres: <input type="text" name="" id="texto"></label>
                 <br><br>
@@ -52,7 +51,22 @@
                 <input type="submit" value="registrate">
             </form>
     </section>
-
+    <!--averiguar la propiedad action que me permite cargar archvios multimedia en mi formulario-->
+    <section>
+        <h3>propiedades action</h3>
+        <ol>
+            <li><strong>action</strong> : Define la URL donde se enviarán los datos del formulario.</li>
+            <li><strong>method="post"</strong> : Usa el método POST para enviar datos al servidor.</li>
+            <li><strong>enctype="multipart/form-data"</strong> : Permite enviar archivos en el formulario.</li>
+            <li><strong>input type="file"</strong> : Permite seleccionar archivos.</li>
+            <li><strong>accept="image/*,video/*,audio/*"</strong> : Filtra los tipos de archivos permitidos.</li>
+        </ol>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file">Selecciona un archivo:</label>
+            <input type="file" name="file" id="file" accept="image/*,video/*,audio/*">
+            <button type="submit">Subir archivo</button>
+        </form>
+    </section>
 
     <script src="../js/script.js"></script>
 </body>
